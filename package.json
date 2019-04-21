@@ -1,0 +1,45 @@
+{
+  "name": "in-orbit",
+  "version": "1.0.0",
+  "description": "A package for adding progress circle animations to your react app.",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Audiosutras/in-orbit.git"
+  },
+  "keywords": [
+    "progress",
+    "circle",
+    "animation",
+    "pagination"
+  ],
+  "author": "sutras",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Audiosutras/in-orbit/issues"
+  },
+  "homepage": "https://github.com/Audiosutras/in-orbit#readme",
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.3.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "rollup": "^1.10.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-node-resolve": "^4.2.3"
+  }
+}
