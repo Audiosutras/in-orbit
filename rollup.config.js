@@ -12,7 +12,10 @@ export default {
     babel({
       exclude: 'node_modules/**'
     }),
-    resolve(),
+    resolve({
+      mainFields: ['module', 'main'],
+      dedupe: ['react', 'react-dom']
+    }),
     commonjs({
       namedExports: {
         'node_modules/react/index.js': ['useState', 'useEffect', 'Children', 'Component', 'createElement', 'PropTypes'],
