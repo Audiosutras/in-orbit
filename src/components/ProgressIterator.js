@@ -19,7 +19,7 @@ const ProgressIterator = ({ seconds, paginateArr, children }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const iterate = () => {
-    if (paginateArr && (typeof [] === 'object') && paginateArr.length >= 1) {
+    if (paginateArr && (typeof paginateArr === 'object') && paginateArr.length >= 1) {
       if (percent >= 100) {
         if (currentIndex >= (paginateArr.length - 1)) {
           setCurrentIndex(0);

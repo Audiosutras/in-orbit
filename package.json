@@ -26,17 +26,18 @@
   },
   "homepage": "https://github.com/Audiosutras/in-orbit#readme",
   "peerDependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^9.3.4"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
     "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
     "rollup": "^1.10.1",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^9.3.4",
