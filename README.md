@@ -1,2 +1,5 @@
 # in-orbit
-An NPM package for adding progress circle animations to your React project.
+A react component library for rending beautiful progress circle animations.
+
+### DOCS
+[Documentation](https://docs-in-orbit.herokuapp.com/)

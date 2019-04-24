@@ -8,11 +8,11 @@ import React from 'react';
   Color = String, color of the Stroke, (Optional)
   OutlineColor = String, color of stationary circle, (Optional) (If passed, has precedence over other color styling, defaults to color, themeColor color has precedence over color)
   StrokeOpacity = Number (Optional)
-  theme = String, One of the key-value pairs within this.props.theme. Originally based on the stylings found in draftmenu.scss.
 
 */
 
-const Basic = ({ percent, diameter = 30, strokeWidth = 2, color = 'black', outlineColor, strokeOpacity = 0.7, showOutline = true }) => {
+const Basic = ({ percent, diameter = 30, strokeWidth = 2, color = 'black', outlineColor, strokeOpacity = 0.7, showOutline = true, lg }) => {
+  if (lg) diameter = 40;
   const radius = (diameter / 2) - (strokeWidth * 2);
   const circumference = radius * 2 * Math.PI;
   const offset = circumference - percent / 100 * circumference;

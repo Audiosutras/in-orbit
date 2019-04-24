@@ -1,6 +1,6 @@
 {
   "name": "in-orbit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package for adding progress circle animations to your react app.",
   "main": "dist/bundle.js",
   "files": [
@@ -17,7 +17,8 @@
     "progress",
     "circle",
     "animation",
-    "pagination"
+    "pagination",
+    "react"
   ],
   "author": "sutras",
   "license": "ISC",
@@ -42,5 +43,6 @@
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^9.3.4",
     "rollup-plugin-node-resolve": "^4.2.3"
-  }
+  },
+  "dependencies": {}
 }

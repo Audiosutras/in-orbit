@@ -8,14 +8,13 @@ strokeWidth = Number, width of the stroke that revolves around each circle. Help
 Color = String, color of the Stroke (Default = 'grey')
 outlineColor = String, color of stationary circle. (Optional, defaults color prop),
 showOutline, = Pass prop to set to true. Stationary circles will be made visible
-strokeOpacity = Float (0 - 1)
 sync = Pass prop to set to true, align the beginning animation of both circles with the top of the page
 genesis = Pass prop to set to true, a special variation of the animation
 flash = Pass prop to set to true, whether or not the inner circle will appear filled at 90% and 94% completed. (Only an option if the genesis prop is set to true)
 lg = Pass prop to set to true, (diameter is set to 40);
 */
 
-const Revolve = ({ percent, diameter = 30, strokeWidth = 2, color = '#05F7EC', outlineColor, strokeOpacity = 1, showOutline, sync, genesis, flash, lg }) => {
+const Revolve = ({ percent, diameter = 30, strokeWidth = 2, color = '#05F7EC', outlineColor, showOutline, sync, genesis, flash, lg }) => {
   if (lg) diameter = 40;
   const radius = (diameter / 2) - (strokeWidth * 2);
   const circumference = radius * 2 * Math.PI;
