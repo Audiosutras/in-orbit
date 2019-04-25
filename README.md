@@ -1,19 +1,16 @@
 # in-orbit
 A react component library for rending beautiful progress circle animations.
 
-[Documentation Website](https://docs-in-orbit.herokuapp.com/) 
-The above documentation is hosted on Heroku. A server may need to be spun to server the content if the page hasn't been accessed for some time. Loading times may be slow, and on first load the page may show an application error. Just reload the page again and the content will be served.
-
 ## Tutorial
 
-1. We have installed in-orbit using `npm i in-orbit` or `yarn add in-orbit`. Now let's import what we need. `ProgressIterator` is required. Available progress circle animations include `Basic`, `Revolve`, and `Hazard`. 
+We have installed in-orbit using `npm i in-orbit` or `yarn add in-orbit`. Now let's import what we need. `ProgressIterator` is required. Available progress circle animations include `Basic`, `Revolve`, and `Hazard`. Choose one or all of them.
+
 ```javascript
   import React from 'react';
   import { ProgressIterator, Basic, Hazard, Revolve } from 'in-orbit';
 ```
 
-2. Component Syntax.
-  * We just want to use the animation when a certain condition is true (i.e. isLoading = true). Or we want to use the animation as a button by wrapping the animation in button tags. I'll leave it up to you. `percent` is a required prop. It is a child of ProgressIterator and must be passed to the animation component in order for it to render properly.
+#### Component Syntax.
 
 ```javascript
 // w/o array provided to ProgressIterator 
@@ -26,7 +23,7 @@ const Component = () => {
 };
 export default Component;
 ```
-  * We have an array that we want to paginate through. We pass the array to the ProgressIterator component using the `paginateArr` prop. `currentIndex` is now made available in children along with `percent`. When the animation is completed, currentIndex is updated with the next index. ProgressIterator will continuously cycle through all indices of the provided array. In this example, whenever the animation completes, I want the color of the animation to change. `genesis` and `flash` are props that provide a special variation on the Revolve animation. They are optional.
+In the above example, we just want to use the animation. `percent` is a required prop passed from ProgressIterator children to the animation component. It must be passed to the animation component in order for it to render properly.
 
 ```javascript
 // w array provided to ProgressIterator, currentIndex becomes available in children
@@ -40,6 +37,7 @@ const Component = () => {
 };
 export default Component;
 ```
+ We have an array that we want to paginate through. We pass the array to the ProgressIterator component using the `paginateArr` prop. `currentIndex` is now made available in children along with `percent`. When the animation is completed, currentIndex is updated with the next index. ProgressIterator will continuously cycle through all indices of the provided array. In the above example, whenever the animation completes, we want the color of the animation to change.
 
 ## API
 
@@ -58,3 +56,7 @@ export default Component;
 | flash | pass prop to set to true, whether or not the inner circle will appear filled when animation is at 90% and 94% completed. | boolean | Revolve | false | 
 | lg | pass prop to set to true, diameter is set to 40. | string | Revolve, Hazard, Basic | (Optional) | 
 | strokeOpacity | used for setting the opacity of the animation. | Float (0 - 1) | Basic | 0.7 |
+
+
+[Documentation Website](https://docs-in-orbit.herokuapp.com/) 
+The above documentation is hosted on Heroku. A server may need to be spun to server the content if the page hasn't been accessed for some time. Loading times may be slow, and on first load the page may show an application error. Just reload the page again and the content will be served.
