@@ -58,5 +58,5 @@ export default Component;
 | strokeOpacity | used for setting the opacity of the animation. | Float (0 - 1) | Basic | 0.7 |
 
 
-[Documentation Website](https://docs-in-orbit.herokuapp.com/) 
+[Documentation](https://docs-in-orbit.herokuapp.com/) 
 The above documentation is hosted on Heroku. A server may need to be spun to server the content if the page hasn't been accessed for some time. Loading times may be slow, and on first load the page may show an application error. Just reload the page again and the content will be served.
